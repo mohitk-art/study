@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>test</title>
+</head>
+<script>
+//button 1
+function clk1(){
+//document.write("hello");
+document.getElementById("c1").style.display="inline";
+}
+function clkc1(){
+document.getElementById("c1").style.display="none";
+}
+function clkout1(){
+document.getElementById("c1").style.display="none";
+}
+
+//button 2
+function clk2(){
+//document.write("hello");
+document.getElementById("c2").style.display="inline";
+}
+function clkc2(){
+document.getElementById("c2").style.display="none";
+}
+function clkout2(){
+document.getElementById("c2").style.display="none";
+}
+</script>
+<style>
+#header{
+width:100%;
+height:150px;
+background:#FF9933;
+}
+
+#p1,#c1,#p2,#c2{
+position:fixed;
+list-style:none;
+}
+#p1{
+/*right:150px; */
+}
+#c1{
+/*right:120px;*/
+display:none;
+}
+#p2{
+/*right:30px;*/
+}
+#c2{
+/*right:10px;*/
+display:none;
+}
+
+
+
+
+/*button */
+.p1, .c1{
+cursor:pointer;
+width:100px;
+border-radius:10px;
+font-weight:bold;
+text-align:center;
+background:#FFFFFF;
+border:#0000FF solid 1px;
+color:#0000FF;
+}
+.p1:hover, .c1:hover{
+background:#0000FF;
+color:#FFFFFF;
+list-style-positions;
+}
+
+/*button */
+.p2, .c2, button{
+cursor:pointer;
+width:100px;
+border-radius:10px;
+font-weight:bold;
+text-align:center;
+background:#FFFFFF;
+border:#0000FF solid 1px;
+color:#0000FF;
+}
+.p2:hover, .c2:hover, button:hover{
+background:#0000FF;
+color:#FFFFFF;
+list-style-position:outside;
+}
+
+
+
+#buttons{
+border:blue solid 1px;
+}
+.btns{
+width:150px;
+}
+</style>
+<body>
+<table width="100%">
+<!--header -->
+<tr><th id="header">
+</th></tr>
+
+
+<!-- buttons -->
+<tr><th id="buttons">
+	<table align="right" border="1">
+	<tr valign="top">
+	<th class="btns"><button>Home</button></th>
+	<th class="btns"><button>Gallery</button></th>
+	
+	<!--status btn -->
+	<th class="btns">
+	<ul id="p1"  onmouseout="return clkout1();" onmouseover="return clk1();">
+	<li class="p1">Status</li>
+	<ul id="c1">
+	<li onclick="return clkc1();" class="c1">Result</li>
+	<li onclick="return clkc1();" class="c1">Staff Detail</li>
+	<li onclick="return clkc1();" class="c1">User Detail</li>
+	</ul>
+	</ul>
+	</th>
+
+	<!--new subject btn -->
+	<th valign="top" class="btns">
+	<ul id="p2"  onmouseout="return clkout2();" onmouseover="return clk2();">
+	<li class="p2">New Subject</li>
+	<ul id="c2">
+	<li onclick="return clkc2();" class="c2">New Subject</li>
+	<li onclick="return clkc2();" class="c2">New Test</li>
+	<li onclick="return clkc2();" class="c2">New Question</li>
+	</ul>
+	</ul>
+	</th>
+	</tr>
+	</table>
+</th></tr>
+
+<!--content -->
+<tr><th id="content">
+	<table>
+	<tr><th>
+	Welcome online exam
+	</th></tr>
+	</table>
+</th></tr>
+</table>
+</body>
+</html>

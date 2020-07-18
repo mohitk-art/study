@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="#" autocomplete="on" id="form1">
+First name:<br>
+first name<input type="text" name="firstname" value="John" disabled><br />
+last name<input type="text" name="lastname" size="50" maxlength="10" autofocus><br />
+E-mail: <input type="email" name="email" autocomplete="off"><br>
+<input type="submit" formaction="/form1.php" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data"/>
+  <input type="submit" formmethod="post" value="submit with post method"/>
+<input type="submit" formmethod="get" value="submit with get method" />
+<input type="submit" formnovalidate value="Submit without validation">
+<input type="submit" formtarget="_blank" value="Submit to a new window">
+<input type="image" src="abc.png" alt="Submit" width="48" height="48">
+</form>
+
+<br /><br />It is part of form <br />
+Last name: <input type="text" name="lname" form="form1">
+<br /><br />
+
+Select images: <input type="file" name="img" multiple>
+</body>
+</html>

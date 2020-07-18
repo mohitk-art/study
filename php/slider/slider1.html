@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+#jassy
+{
+	width:500px;
+	border:1px solid black;		
+	margin:auto;
+}
+</style>
+<script type="text/javascript">
+	var image1=new Image();
+	image1.src = "1.jpg";
+	var image2 = new Image();
+	image2.src = "2.jpg";
+	var image3 = new Image();
+	image3.src = "3.jpg";
+	var image4 = new Image();
+	image4.src = "4.jpg";
+	var image5 = new image();
+	image5.src = "5.jpg";
+</script>
+
+</head>
+<body>
+<div id="jassy">
+<img src="1.jpg" name="slide" width="500px" height="400px"/>
+<script>
+var step=1;
+function slideit()
+{
+
+	document.images.slide.src=eval("image"+step+".src");
+	setTimeout("slideit()",1000);
+step = step+1;
+}
+
+slideit();
+</script>
+</div>
+</body>
+</html>

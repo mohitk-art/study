@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>use of pattern attribute</title>
+</head>
+<style>
+#head{
+background: skyblue;
+height:100px;
+width:100%;
+}
+
+#h1{
+background: green;
+width:100%;
+color:white;
+}
+</style>
+<body>
+<hr><hr>
+<div id="head"></div>
+<div id="h1"><marquee>Welcome to online exam</marquee></div>
+
+
+<form method="post" action="#">
+<input type="text" pattern="[0-9]{10}" title="This must contain only 10 digits" required="">
+<input type="text" pattern=".{6,}" title="This must contain only 6 or more characters" required="">
+<input type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="This must contain at least 8 or more characters, and at least one number and one uppercase and lowercase latter" required="">
+
+<input type="submit">
+</form>
+</body>
+</html>

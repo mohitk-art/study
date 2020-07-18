@@ -1,0 +1,213 @@
+<html>
+<head>
+<style>
+header{
+      float: top;
+      position: fixed;
+      width: 100%;
+      height: 100px;
+      margin: 5px;
+      padding: 5px;
+      background-color:orange;
+      font-size:50px;
+      font-weight: bold;
+      vertical-align: middle;
+      text-align: center;
+      font-variant: small-caps;
+      color:white;
+    }
+    #header{ /*header height */
+      height: 100px;
+    }
+    section{
+      margin: 5px;
+      padding: 5px;
+      border:1px solid blue;
+    }
+
+    article{
+      margin: 5px;
+      padding: 5px;
+      border:1px solid orange;
+    }
+    footer{
+      margin: 5px;
+      padding: 5px;
+      height: 50px;
+      bottom: 0;
+      width: 100%;
+      color:white;
+      font-size:40px;
+      background: green;
+    }
+    #footer{ /*footer height */
+      height: 50px;
+    }
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color:red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*article 2 */
+.dropbtn1 {
+    background-color: lightgreen;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown1 {
+	    position: relative;
+    display: inline-block;
+    color:red;
+}
+
+.dropdown-content1 {
+  display: none;
+  position:absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content1 a{
+display: block;
+font-size: 30px;
+text-decoration: none;
+color: black;
+}
+
+.dropdown-content1 a:hover {background-color: #f1f1f1}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+.dropdown1:hover .dropbtn1 {
+    background-color: #3e8e41;
+}
+
+
+
+/*article 3 */
+
+.content{
+    display: none;
+    position: absolute;
+}
+
+.dropdown2:hover .content{
+  display:block;
+}
+
+.content button{
+	display: block;
+	margin: 5px 5px;
+}
+
+button{
+	width: 100px;
+	border-radius: 20px;
+	background: blue;
+	color:white;
+	font-weight: bold;
+	padding: 5px 5px;
+}
+button:hover{
+	background: skyblue;
+	text-shadow: black 1px 1px;
+	color: yellow;
+}
+</style>
+</head>
+<body>
+<header>Dropdown</header>
+<div id="header"></div>
+
+<section>
+  <article>
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the text below to open the dropdown content.</p>
+
+<span class="dropdown">
+  <span>Mouse over me</span> 
+  <span class="dropdown-content">
+    <p>Hello World!</p>
+  </span>
+</span>
+jfbfgjbfg dhgkd dgdgdk gdfg lf;hf fhjfd[wsdf dhdg dghdg ddfp;f fddg hgldkgd j fgknfk hglfhljhfgjgflg kfhfhn hgdg usfgsdfdlk gfdghl gdglklg ghdfgdfg dgdfgdkfg gdfgkdflg fdgfsd fidgkdflg ifldk kdbglkdfgbdg gbdghesl eiegfeig kgitdgdsg dghidgbd bgihgdfg gbgdfg gbgdf iehgergerg ghgerg ghoegerog ehedfgeg eghodgnerg goerg  fghfghkfd fgkfkl fghfln fbkgfd fdfklg 
+</article>
+
+<article>
+  <h2>Dropdown Menu</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<span class="dropdown1">
+  <button class="dropbtn1">Dropdown</button>
+  <span class="dropdown-content1">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </span>
+</span>
+Note: We use href="#" for test links. In a real web site this would be URLs.
+</article>
+
+<article>
+
+  <strong>Dropdown in nav</strong>
+  <nav>
+  	<table>
+  		<tr>
+  <td><button>Home</button></td>
+  <td><button>Gallary</button></td>
+  
+  <td>
+  <span class="dropdown2">
+  <button>Status</button>
+  <span class="content">
+  <button>Student</button>
+  <button>Staff</button>
+  </span>
+</span>
+</td>
+
+<td>
+<button>Logout</button>
+</td>
+
+</tr>
+</table>
+  </nav>
+</article>
+
+</section>
+<div id="footer"></div>
+<footer></footer>
+</body>
+</html>

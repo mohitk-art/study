@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>text</title>
+<style>
+div{
+width:100%;
+}
+#a{
+color:red;
+text-decoration:blink;
+text-transform:capitalize;
+direction:rtl; /*align right */
+outline:#FF0000 dotted 3px;
+
+}
+#b{
+text-decoration:inherit;
+text-transform:lowercase;
+direction:ltr; /*align left */
+border:#0000FF solid 1px;
+}
+#c{
+text-decoration:line-through;
+text-transform:uppercase;
+direction:inherit;
+}
+#d{
+text-decoration:overline;
+text-transform:inherit;
+}
+#e{
+text-decoration:underline;
+}
+</style>
+<script type="text/javascript">
+function abc(){
+document.getElementById("c1").style.color="red";
+document.getElementById("print").innerHTML="hello hy";
+}
+</script>
+
+</head>
+<body>
+<div id="a">text 1</div>
+<div id="b">text 2</div>
+<div id="c">text 3</div>
+<div id="d">text 4</div>
+<div id="e">text 5</div>
+<small>Small</small>
+<sub>Subscript</sub>
+<del id="del">Delete</del>
+<sup>SuperScript</sup>
+<ins id="c1" onclick="return abc();">Inserted</ins>
+<mark>Mark</mark>
+<div id="print"></div>
+<div id="cls">class</div>
+
+</body>
+</html>
